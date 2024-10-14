@@ -5,6 +5,7 @@ body {
 
 .app-container {
   grid-template-columns: 1fr;
+  padding: 30px;
 }
 
 
@@ -12,7 +13,7 @@ body {
   .app-container {
     display: grid;
     grid-template-columns: 200px 1fr;
-    gap: 20px;
+    gap: 15px;
   }
 }
 
@@ -26,7 +27,8 @@ body {
 .note-item {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+  width: 260px;
   border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
@@ -55,7 +57,7 @@ h2 {
 .note-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 textarea,
@@ -64,6 +66,7 @@ input {
   border: 1px solid black;
   padding: 10px;
   font-size: 16px;
+  width: 170px;
 }
 
 .note-form button {
@@ -72,6 +75,7 @@ input {
   border: none;
   padding: 10px;
   font-size: 16px;
+  width: 190px;
   color: white;
 }
 
@@ -93,4 +97,29 @@ input {
 .edit-buttons button:last-of-type {
   background-color: rgb(220, 89, 89);
   color: white;
+}
+
+.toggle-theme-button {
+  height: 40px;
+  width: 190px;
+  border-radius: 5px;
+  background-color: rgb(64, 154, 184);
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.create-note-dropdown {
+  width: 192px;
+}
+
+.favorites-button {
+  width: 30px;
+  height: 30px;
+}
+
+.favorites-list-header {
+  margin-top: 20px;
 }
