@@ -97,7 +97,9 @@ function App() {
      	</select>
    	</div>
     	<div><button type="submit">Create Note</button></div>
-      <button onClick={toggleTheme} className="toggle-theme-button">Toggle Theme</button>
+      <button type="button" onClick={toggleTheme} className="toggle-theme-button">
+        Toggle Theme
+      </button>
       <div className="favorites-list">
         <h2 className="favorites-list-header">List of favorites:</h2>
         <ul>
@@ -111,7 +113,8 @@ function App() {
       {notes.map((note) => (
          <div
            key={note.id}
-           className="note-item">
+           className="note-item"
+           >
            <div className="notes-header">
             <button onClick={() => toggleFavorite(note.id)} className="favorites-button">
               {note.isFavorite ? '❤️' : '♡'}

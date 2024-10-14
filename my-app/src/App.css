@@ -123,3 +123,8 @@ input {
 .favorites-list-header {
   margin-top: 20px;
 }
+
+.note-content-textarea {
+  font-family: 'Arial';
+  height: 70px;
+}

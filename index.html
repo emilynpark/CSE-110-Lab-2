@@ -59,8 +59,11 @@
             <label for="note-label">Label Your Note:</label>
             <select name="note-category" id="note-category-select" class="dropdown">
                 <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="study">Study</option>
+                <option value="other">Other</option>
             </select>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
         </form>
 
         <div class="result" id="result"></div>
@@ -93,7 +96,15 @@
             this.style.backgroundColor = "#e0f7fa";
         });
 
-        document.getElementById("content").addEventListener("focus", function () {
+        document.getElementById("content").addEventListener("blur", function () {
+            this.style.backgroundColor = "";
+        });
+
+        document.getElementById("submit").addEventListener("focus", function () {
+            this.style.backgroundColor = "#e0f7fa";
+        });
+
+        document.getElementById("submit").addEventListener("blur", function () {
             this.style.backgroundColor = "";
         });
     </script>
